@@ -29,6 +29,10 @@ chocolates = [
 def get_chocolates():
     return jsonify(chocolates)
 
+@app.route('/seconddev', methods=['GET'])
+def dev_second_code():
+    return "Hello, I am second dev"
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
 
